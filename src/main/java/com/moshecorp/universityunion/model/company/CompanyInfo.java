@@ -1,10 +1,10 @@
 package com.moshecorp.universityunion.model.company;
 
 import com.moshecorp.universityunion.model.comments.Comments;
-import com.moshecorp.universityunion.model.comments.Likes;
 import lombok.Data;
 
 import java.util.List;
+import java.util.Map;
 
 @Data
 public class CompanyInfo {
@@ -13,7 +13,7 @@ public class CompanyInfo {
     List<CompanyPhoto> companyPhoto;
     CompanyVideo companyVideo;
     CompaniesTags companyTags;
-    List<Comments> comments;
+    Map<Comments, Integer> commentsAndLikes;
     Long likes;
     int rating;
 
